@@ -1,0 +1,445 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+}
+
+:root {
+  --bg-color:#2C3333 ;
+  --bg-color1:#cdebf4 ;
+  --bg-color2:#A5C9CA ;
+  --bg-color3:#E7F6F2 ;
+  --d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(255, 255, 255);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Noto+Sans+Chakma&display=swap');
+
+#root{
+  background-color: #181a20;
+  height: 100vh;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: 'MuseoModerno', cursive;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar{
+  background-color: #f2f2f2f2;
+  filter: blur(30);
+  display: flex;
+  padding: 10px;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+    /* border-radius: 2rem; */
+    border: 3px solid #f2f2f2f2;
+  gap: 20px;
+  align-items: center;
+}
+
+.onact{
+  color: #0bd6ff;
+  border-bottom: 3px solid #0bd6ff;
+  font: bolder;
+  list-style: none;
+ text-decoration: none;
+ outline: 0;
+
+}
+
+.offact{
+  color: #000000;
+  font: bolder;
+  list-style: none;
+ text-decoration: none;
+ outline: 0;
+ border: 0;
+}
+
+.logo{
+  height: 40px;
+  width: 40px;
+  margin-left: 2rem;
+}
+
+
+.boxBook:hover .descript{
+  transform: scale(1);
+  transition: 200ms ease-out;
+
+} 
+.imgBookHome{
+  transition: 400ms ease  ;
+  height: 100%;
+  width: 100%;
+}
+.divimg{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.imgDelete{
+  width: 10vw;
+  height: 30vh;
+  margin-left: 5rem;
+  border-radius: 1rem;
+}
+
+.boxBook{
+  width: 20vw !important;
+  height: 80vh;
+  justify-content: center;
+  margin-left: 2.5rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.603);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  color: rgb(255, 255, 255);
+  border: 0.35rem solid;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  overflow-x: auto;
+}
+
+.boxBook:hover{
+	animation: borderRotate var(--d) linear forwards;
+}
+
+.btnlist{
+  border: 2px solid rgb(0, 0, 0);
+  background-color:transparent ;
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  margin-left: 1rem;
+  transition: 200ms ease-in;
+}
+.btnlist:hover{
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(111, 111, 111, 0.446);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.titleBox{
+  margin-left: 1rem;
+  color: #000000;
+
+}
+
+.boxRow{
+  margin-top: 4rem;
+  padding: 0rem 0rem 0rem 16rem;
+}
+
+.detailBook{
+  width: 10vw !important;
+}
+
+.tablemaster{
+  margin-top: 5rem;
+}
+
+.formData{
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid rgb(77, 77, 77);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  height: auto;
+  gap: .5rem;
+}
+
+.inputdata{
+  height: 7vh !important;
+  border-radius: 1rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
+.inputdata1{
+  height: 7vh !important;
+  width: 100% !important;
+  border-radius: 1rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.areainput{
+  height: 10vh !important;
+  border-radius: 1rem;
+  padding: 1.5rem 0rem 0rem 1rem;
+}
+
+.btnadd{
+  margin-top: 1rem;
+  border: none;
+  border-radius: 1rem;
+  height: 6vh;
+  background-color: rgb(0, 162, 255);
+}
+
+.addBook{
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+}
+
+.actionbtn{
+  display: flex;
+  margin-left: 1rem;
+}
+
+.deletebtn{
+  margin-left: 1rem;
+}
+
+.idedit{
+  display: flex;
+  flex-direction: column;
+}
+
+.drop {
+  background: rgba(61, 62, 63, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  position: absolute;
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+  display: block;
+  margin: 0 auto;
+}
+
+.drop1 {
+  width: 7rem;
+  height: 7rem;
+  top: 7rem;
+  left: 15rem;
+  z-index: 0;
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+}
+
+.drop2 {
+  width: 7rem;
+  height: 7rem;
+  bottom: 3rem;
+  left: 36rem;
+  z-index: 0;
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+}
+
+.descript
+{
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.603);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  transform: scale(0.9);
+  transition: 200ms ease-in;
+}
+
+.searchResult{
+  float: inline-start;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  background-color: #ffffff;
+  cursor: pointer;
+  top: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
+  border-radius: 1rem;
+
+}
+
+.pointO:hover{
+  background-color: rgba(232, 232, 232, 0.428);
+}
+
+.pagination{
+  position: absolute;
+  top: 23rem;
+  left: 1rem;
+  display: flex;
+  gap: 20px;
+}
+
+.pagess{
+  position: absolute;
+  top: -5rem;
+  left: 6.5rem;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.tombP{
+  border: 2px solid rgb(255, 255, 255);
+  background-color:transparent ;
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: 200ms ease-in;
+  transform: scale(0.9);
+
+}
+
+.tombP:hover{
+  background-color: rgba(232, 232, 232, 0.428);
+  border: 2px solid rgb(255, 255, 255);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  transform: scale(1);
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: 200ms ease-in;
+}
+
+
+
+.paginationdata{
+  position: absolute;
+  bottom: 3rem;
+  left: 40rem;
+  display: flex;
+  gap: 50px;
+}
+
+.pagessdata{
+  position: absolute;
+  top: 0rem;
+  left: 7.5rem;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.tombPdata{
+  border: 2px solid rgb(255, 255, 255);
+  background-color:transparent ;
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: 200ms ease-in;
+  transform: scale(0.9);
+
+}
+
+.tombPdata:hover{
+  background-color: rgba(232, 232, 232, 0.428);
+  border: 2px solid rgb(255, 255, 255);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  transform: scale(1);
+  height: 4vh;
+  width: 5vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: 200ms ease-in;
+}
+
+.ALertNotif{
+  background-color: red;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding: 1rem 1rem 1rem 7rem;
+}
+
+.successNotif{
+  background-color: rgb(0, 255, 76);
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding: 1rem 1rem 1rem 5rem;
+}
+
+.boxDetail{
+  margin-top: 5rem;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  gap: 100px;
+  background-color: rgba(232, 232, 232, 0.428);
+  border: 2px solid rgb(255, 255, 255);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+}
+
+.rowDetail{
+  width: auto;
+  padding: 0rem 5rem;
+}
+
+.detailBookImg{
+  width: 20vw;
+  height: 50vh;
+}
+
+.detailBookDesc{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  font-size: 1.5rem;
+}
+
+.imgBookDetail{
+  height: 100%;
+  width: 100%;
+}
