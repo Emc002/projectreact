@@ -17,6 +17,30 @@
       "value": "Jim Kwik",
       "label": "Jim Kwik",
       "biografi": "For the last 25 years, Jim Kwik has helped everyone from celebrities to CEOs to students improve their memory, increase their decision-making skills, learn to speed-read, and unleash their superbrains."
+    },
+    {
+      "label": "Jostein Gaarder",
+      "biografi": " seorang intelektual sekaligus penulis novel, cerita pendek dan buku anak-anak dari Norwegia. Gaarder sering menulis dengan menggunakan sudut pandang anak-anak, menonjolkan rasa penasaran mereka akan dunia.",
+      "value": "Jostein Gaarder",
+      "id": 4
+    },
+    {
+      "label": "Steven Kotler",
+      "biografi": " adalah seorang penulis, jurnalis, dan pengusaha Amerika. Dia terkenal karena buku-buku non-fiksinya, termasuk Abundance, A Small Furry Prayer, West of Jesus, Bold, The Rise of Superman dan Stealing Fire.",
+      "value": "Steven Kotler",
+      "id": 5
+    },
+    {
+      "label": "David Sargent ",
+      "biografi": "David J. Sargent (born 1931) was the President of Suffolk University in Boston, Massachusetts from 1989 to 2010.Sargent is a native of Newport, New Hampshire and graduated from the Suffolk University Law School magna cum laude in 1954, ranked number one and president of his class.",
+      "value": "David Sargent ",
+      "id": 6
+    },
+    {
+      "label": "ERBE SENTANU",
+      "biografi": "Erben Sentanu merupakan founder dari Katahati Institute, sebuah transformasi dan perusahaan manajemen hati. Selain itu ia juga pengarang buku best seller Quantum Ikhlas dan Zona Ikhlas.",
+      "value": "ERBE SENTANU",
+      "id": 7
     }
   ],
   "genre": [
@@ -123,6 +147,15 @@
       "desc": "Bestselling author, peak performance expert and Executive Director of the Flow Research Collective, Steven Kotler decodes the secrets of those elite performers—athletes, artists, scientists, CEOs and more—who have changed our definition of the possible, teaching us how we too can stretch far beyond our capabilities, making impossible dreams much more attainable for all of us.",
       "authorId": 3,
       "id": 9
+    },
+    {
+      "title": "Dunia Sophie",
+      "author": "Jostein Gaarder",
+      "cover": "//upload.wikimedia.org/wikipedia/id/thumb/a/a8/Duniasophie-cover-inggris.JPG/220px-Duniasophie-cover-inggris.JPG",
+      "genre": "Philosophy",
+      "desc": "Novel ini sebagian besar terdiri dari dialog-dialog antara Sophie, seorang gadis remaja, dan seorang pria misterius bernama Alberto Knox, yang saling terkait dengan plot yang unik dan misterius, novel ini menjadi sebuah novel sekaligus panduan dasar filsafat. Pada tahun 1999, novel ini diadaptasi ke dalam sebuah film di Norwegia.",
+      "authorId": "4",
+      "id": 10
     }
   ]
 }
