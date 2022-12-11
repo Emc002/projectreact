@@ -65,10 +65,11 @@ const AuthorData = () => {
       const response = await axios.get(
         `http://localhost:3004/author?_page=${page}&_limit=5`
       );
+      console.log(`http://localhost:3004/author?_page=${page}&_limit=5`);
       if (response.status === 200) {
         setDataSource(response.data);
       }
-      if (response.data.length == 0) {
+      if (response.data.length === 0) {
         setPages(page - 1);
         openNotification("top");
         forceUpdate();
@@ -85,7 +86,7 @@ const AuthorData = () => {
     }
   };
   const NEXT = () => {
-    if (page < dataSource.length - 1) {
+    if (dataSource.length !== 0) {
       setPages(page + 1);
       forceUpdate();
     }

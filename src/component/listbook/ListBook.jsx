@@ -66,6 +66,7 @@ const ListBook = () => {
     <Row className="boxRow" gutter={[16, 24]}>
       <div class="drop drop1"></div>
       <div class="drop drop2"></div>
+
       {contextHolder}
       {book?.map((book) => (
         <div className="boxBook">

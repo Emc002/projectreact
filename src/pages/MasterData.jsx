@@ -21,7 +21,7 @@ const MasterData = () => {
     }
   };
   const NEXT = () => {
-    if (page < dataSource.length - 1) {
+    if (dataSource.length !== 0) {
       setPages(page + 1);
       forceUpdate();
     }
